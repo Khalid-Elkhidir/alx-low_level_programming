@@ -5,3 +5,4 @@ C-Hello, World
 2-assembler: Generate assembly code for file.
 3-name: Compile and generate executable file.
 4-puts: Print text to screen using puts
+5-printf: Print text using printf
