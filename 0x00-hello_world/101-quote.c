@@ -1,4 +1,4 @@
-#include <iostream>
+#include <stdlib.h>
 
 /**
  * main -  This program prints a text without using regular functions
