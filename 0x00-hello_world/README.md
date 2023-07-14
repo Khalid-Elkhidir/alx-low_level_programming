@@ -8,3 +8,4 @@ C-Hello, World
 5-printf.c: Print text using printf
 6-size.c: Prints sizes of various types in the current computer.
 100-intel: Generates assembly code in intel syntax.
+101-quote.c: Write to std output without using printf or puts.
