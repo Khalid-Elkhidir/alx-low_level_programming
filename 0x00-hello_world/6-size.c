@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - This program prints the sizes of various types based on the 
- * 	  computer.
+ * main - This program prints the sizes of various types based on the computer.
  *
  * Return: returns 0
  */
