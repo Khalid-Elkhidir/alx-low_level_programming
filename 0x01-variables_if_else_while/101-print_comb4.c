@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - This program prints two digits
+ * main - This program prints three digits
  * combinations
  *
  * Return: return 0
