@@ -19,7 +19,7 @@ int main(void)
 		{
 			for (k = 2 ; k < 10 ; k++)
 			{
-				if (i != j && i < j)
+				if (i != j && i < j && j != k && j < k)
 				{
 					putchar('0' + i);
 					putchar('0' + j);
