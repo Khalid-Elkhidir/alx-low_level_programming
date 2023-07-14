@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <string.h>
+#include <iostream>
 
 /**
  * main -  This program prints a text without using regular functions
