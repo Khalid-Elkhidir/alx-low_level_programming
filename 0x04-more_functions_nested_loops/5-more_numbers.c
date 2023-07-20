@@ -8,12 +8,13 @@
 void more_numbers(void)
 {
 	int i;
-	int j
 
 	i = '0';
 
 	while (i <= '9')
 	{
+		int j;
+
 		j = '0';
 
 		_putchar(i);
@@ -30,7 +31,7 @@ void more_numbers(void)
 				_putchar(k);
 				_putchar(j);
 				j++;
-			{
+			}
 		}
 
 		i++;
