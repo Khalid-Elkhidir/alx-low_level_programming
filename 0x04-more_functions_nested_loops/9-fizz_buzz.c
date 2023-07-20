@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 /**
- * main - prints numbers 1-100 with multiples of 3 and 
+ * main - prints numbers 1-100 with multiples of 3 and 5
  * altered to fizz and buzz respectively
  *
  * Return: 0
  */
 
-int main()
+int main(void)
 {
 	int i;
 
@@ -19,7 +19,7 @@ int main()
 			printf("Fizz ");
 		else if ((i % 5) == 0)
 			printf("Buzz ");
-		else 
+		else
 			printf("%d ", i);
 	}
 
