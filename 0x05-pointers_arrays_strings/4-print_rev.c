@@ -15,7 +15,7 @@ void print_rev(char *s)
 	length = 0;
 	i = s;
 
-	whiele (*i != 0)
+	while (*i != 0)
 	{
 		length++;
 		i++;
