@@ -2,12 +2,22 @@
 
 /**
  * _puts - prints a string followed by a new line
- *@n: pointer to integer
+ *@str: pointer to char
  *
  *Return: void
  */
 
-void reset_to_98(int *n)
+void _puts(char *str)
 {
-	*n = 98;
+	int i;
+
+	i = *str;
+
+	while (i != 0)
+	{
+		_putchar(i);
+		i = *(str + 1);
+	}
+
+	_putchar('\n');
 }
