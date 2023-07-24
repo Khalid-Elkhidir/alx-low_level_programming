@@ -18,7 +18,7 @@ int _strlen(char *s)
 	while (i != 0)
 	{
 		length++;
-		i = *(s + l);
+		i = *(s + length);
 	}
 
 	return (length);
