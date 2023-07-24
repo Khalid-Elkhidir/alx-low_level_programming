@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 
 /**
  * _puts - prints a string followed by a new line
@@ -10,13 +10,15 @@
 void _puts(char *str)
 {
 	int i;
+	int index;
 
 	i = *str;
+	index = 1;
 
 	while (i != 0)
 	{
 		_putchar(i);
-		i = *(str + 1);
+		i = *(str + index);
 	}
 
 	_putchar('\n');
