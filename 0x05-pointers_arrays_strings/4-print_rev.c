@@ -12,14 +12,20 @@ void print_rev(char *s)
 	char *i;
 	int length;
 
-	length = _strlen(s);
+	length = 0
 	i = s;
+
+	whiele (*i != 0)
+	{
+		length++;
+		i++;
+	}
 
 	while (length >= 0)
 	{
-		i = (s + length);
-		_putchar(*i);
-		length--;
+	i = (s + length);
+	_putchar(*i);
+	length--;
 	}
 
 	_putchar('\n');
