@@ -12,6 +12,7 @@ void rev_string(char *s)
 	char *i;
 	int length;
 	int j;
+	int k;
 
 	length = 0;
 	j = 0;
@@ -23,13 +24,19 @@ void rev_string(char *s)
 		i++;
 	}
 
-	while (j < length / 2)
+	j = length - 1;
+	k = 0;
+
+	while (k < length / 2)
 	{
-		char tmp = *i;
-		s[length - 1] = s[j];
+		char tmp;
+
+		tmp = s[k];
+
+		s[i] = s[j];
 		s[j] = tmp;
 
-		length--;
-		j++;
+		j--;
+		k++;
 	}
 }
