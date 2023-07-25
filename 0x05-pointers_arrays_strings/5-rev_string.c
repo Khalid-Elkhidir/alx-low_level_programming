@@ -21,11 +21,19 @@ void print_rev(char *s)
 		i++;
 	}
 
-	char rev[length];
+	int j;
+	
+	j = 0;
 
-	while (length > 0)
+	while (j < length / 2)
 	{
-	rev[length - 1] = *i;
-	i--;
+		char tmp;
+
+		tmp = *i;
+		s[length - 1] = s[j];
+		s[j] = tmp;
+
+		length--;
+		j++;
 	}
 }
