@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * print_rev - prints a string in reverse followed by a new line
+ * rev_string - reverse string
  *@s: pointer to char
  *
  *Return: void
  */
 
-void print_rev(char *s)
+void rev_string(char *s)
 {
 	char *i;
 	int length;
