@@ -11,8 +11,10 @@ void print_rev(char *s)
 {
 	char *i;
 	int length;
+	int j;
 
 	length = 0;
+	j = 0;
 	i = s;
 
 	while (*i != 0)
@@ -21,15 +23,9 @@ void print_rev(char *s)
 		i++;
 	}
 
-	int j;
-	
-	j = 0;
-
 	while (j < length / 2)
 	{
-		char tmp;
-
-		tmp = *i;
+		char tmp = *i;
 		s[length - 1] = s[j];
 		s[j] = tmp;
 
