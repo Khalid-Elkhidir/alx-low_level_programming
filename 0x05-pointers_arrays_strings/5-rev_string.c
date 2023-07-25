@@ -22,20 +22,10 @@ void print_rev(char *s)
 	}
 
 	char rev[length];
-	int j;
-
-	j = length;
 
 	while (length > 0)
 	{
-		rev[length - 1] = *i;
-		i--;
-	}
-
-	while (j >= 0)
-	{
-		i = rev[j];
-		i++;
-		j++;
+	rev[length - 1] = *i;
+	i--;
 	}
 }
