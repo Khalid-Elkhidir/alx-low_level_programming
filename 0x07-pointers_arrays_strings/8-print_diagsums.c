@@ -10,4 +10,6 @@ void print_diagsums(int *a, int size)
 {
 	printf(", ");
 	printf("\n");	
+
+	return;
 }
