@@ -21,9 +21,7 @@ void print_diagsums(int *a, int size)
 		sum2 += *(a + ((size * i) + size - 1 - i));
 	}
 	
-	_putchar(sum1);
 	_putchar(',');
 	_putchar(' ');
-	_putchar(sum2);
 	_putchar('\n');
 }
