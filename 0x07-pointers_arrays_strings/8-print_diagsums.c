@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
  * print_diagsums -  prints sums
@@ -7,7 +8,6 @@
  */
 void print_diagsums(int *a, int size)
 {
-/*
 	int i;
 	int sum1;
 	int sum2;
@@ -21,8 +21,7 @@ void print_diagsums(int *a, int size)
 		sum1 += *(a + ((size * i) + i));
 		sum2 += *(a + ((size * i) + size - 1 - i));
 	}
-*/	
-	_putchar(',');
-	_putchar(' ');
-	_putchar('\n');
+
+	printf("%d, ", sum1);
+	printf("%d\n", sum2);	
 }
