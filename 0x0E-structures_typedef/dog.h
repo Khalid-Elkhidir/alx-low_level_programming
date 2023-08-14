@@ -1,3 +1,6 @@
+#ifndef Dog
+#define Dog
+
 /**
  * struct dog - Defining a dog structure
  * @*name: Dog name pointer
@@ -14,3 +17,4 @@ typedef struct dog
 	char *owner;
 } dog;
 
+#endif
