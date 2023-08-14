@@ -6,7 +6,8 @@
  *
  * Description: This structure defines a dog
  */
-struct dog {
+struct dog
+{
 	char *name;
 	float age;
 	char *owner;
@@ -16,5 +17,6 @@ struct dog {
  * dog - typedef for struct dog
  */
 typedef struct dog dog;
+
 
 
