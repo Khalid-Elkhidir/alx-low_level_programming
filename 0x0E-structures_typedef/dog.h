@@ -4,8 +4,7 @@
  * @age: Dog age
  * @owner: Dog owner pointer
  *
- * Description: This structure defines a dog comprised of its name,
- * 		age and owner
+ * Description: This structure defines a dog
  */
 struct dog {
 	char *name;
@@ -17,4 +16,5 @@ struct dog {
  * dog - typedef for struct dog
  */
 typedef struct dog dog;
+
 
