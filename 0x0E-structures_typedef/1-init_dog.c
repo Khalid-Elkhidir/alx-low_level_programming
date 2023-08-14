@@ -7,6 +7,8 @@
  * @name: Pointer of type char
  * @age: Dog age
  * @owner: Pointer of type char
+ *
+ * Return: void
  */
 void init_dog(struct dog *d, char *name, float age, char * owner)
 {
