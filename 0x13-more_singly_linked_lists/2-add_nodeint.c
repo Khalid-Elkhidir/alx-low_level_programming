@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -11,12 +12,14 @@ listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *node;
 
+	node = malloc(sizeof(listint_t));
+
 	node->n = n;
 	node->next = *head;
 
-	head = node;
+	head = &node;
 
-	if (head->n == n)
+	if ((*head)->n == n)
 	{
 		return (*head);
 	}
