@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include "lists.h"
+#include <stdlib.h>
 
 /**
  * free_listint2 - function that frees a listint_t list
@@ -10,17 +10,14 @@
 
 void free_listint2(listint_t **head)
 {
-	if (*head == NULL || head == NULL)
-	{
+	listint_t *next;
+
+	if (head == NULL)
 		return;
-	}
-
-	if ((*head) != NULL)
+	while (*head != NULL)
 	{
-		free_listint2(&((*head)->next));
+		next = (*head)->next;
+		free(*head);
+		*head = next;
 	}
-
-	free(*head);
-	*head = NULL;
-
 }
