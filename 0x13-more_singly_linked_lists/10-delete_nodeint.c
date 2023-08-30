@@ -46,16 +46,16 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 			return (-1);
 		}
 
-		temp = (*head)->next;
+		node = (*head)->next;
 		free(*head);
-		*head = temp;
+		*head = node;
 		return (1);
 	}
 
 	before = get_nodeint_at_index(*head, index - 1);
 	node = get_nodeint_at_index(*head, index);
 
-	if (temp == NULL)
+	if (node == NULL)
 	{
 		return (-1);
 	}
@@ -63,5 +63,5 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	before->next = node->next;
 	free(node);
 
-	return (node);
+	return (1);
 }
