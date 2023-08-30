@@ -33,25 +33,24 @@ listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
-	listint_t *before, *next, *node;
+	listint_t *temp, *node;
 
 	if (*head == NULL)
 	{
 		return (NULL);
 	}
 
-	before = get_nodeint_at_index(*head, idx - 1);
-	next = get_nodeint_at_index(*head, idx);
+	temp = get_nodeint_at_index(*head, idx - 1);
 
-	if (before == NULL || next == NULL)
+	if (temp == NULL)
 	{
 		return (NULL);
 	}
 
 	node = malloc(sizeof(listint_t));
 	node->n = n;
-	node->next = next;
-	before->next = node;
+	node->next = temp->next;
+	temp->next = node;
 
 	return (node);
 }
