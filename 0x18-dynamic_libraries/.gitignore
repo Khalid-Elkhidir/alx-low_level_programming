@@ -1,0 +1,6 @@
+**/test.c
+test.c
+*/test.c
+**/*.o
+*.o
+*/*.o
